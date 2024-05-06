@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+
+<input type="text" #name name ="Name" placeholder="Enter your Name:">
+<br>
+
+<input type="text" #address name ="Address" placeholder="Enter your Address:">
+<br>
+
+<input type="text" #contact name ="Contact" placeholder="Enter your Contact:">
+<br>
+
+<input type="text" #email name ="Email" placeholder="Enter your Email:">
+<br>
+
+<input type="text" #password name ="Password" placeholder="Enter your Password:">
+<br>
+
+<button (click)="getValue (name.value,address.value,contact.value,email.value)">Register</button>
+<br>
+
+<h1>Your Registered Data</h1>
+<br>
+<p>Name:{{displayname}}</p>
+<p>Address:{{displayaddress}}</p>
+<p>Contact:{{displaycontact}}</p>
+<p>Email:{{displayemail}}</p>
